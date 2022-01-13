@@ -1,0 +1,74 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 1100px;
+}
+
+
+.box-modal {
+  top: 40%;
+  margin: 0 auto;
+  position: fixed;
+  left: 400px;
+  top: 150px;
+  width: 600px;
+  height: 400px;
+  display: block;
+  background-color: rgb(235, 6, 6);
+  color: #fff;
+  padding: 10px 15px;
+  text-align: center;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+  transform: translate(0px, 0px);
+  opacity: 0;
+}
+
+.show {
+  transform: translate(0px, 50px);
+  transition: all 0.5s ease;
+  opacity: 1;
+}
+
+#btn-modal-connect {
+  position: relative;
+  left: 80%;
+  border-radius: 10px;
+  background-color: rgb(247, 20, 13);
+  color: #fff;
+  padding: 15px 10px;
+  margin-bottom: 50px;
+  width: 200px;
+  margin-top: 50px;
+}
+
+#btn-modal-connect:hover {
+  background-color: rgba(184, 14, 14, 0.898);
+}
+
+#btn-close-modal {
+  position: relative;
+  right: 50%;
+  font-size: 15px;
+  width: 20px;
+  height: 20px;
+  /* padding: 20px; */
+  font-size: 10px;
+  border-radius: 5px;
+  background-color: rgb(243, 235, 235);
+  color: rgb(16, 14, 14);
+}
